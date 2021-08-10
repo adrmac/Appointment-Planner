@@ -4,7 +4,7 @@ const Tile = (props) => {
   const object = props.object;
   const list = Object.values(object);
   const render = list.map((item,i) => {
-    if(i===0) {return <p className="tile-title">{item}</p>}
+    if(i===0) {return <p className="tile-title tile">{item}</p>}
     else {return <p className="tile">{item}</p>}
   });
   return (

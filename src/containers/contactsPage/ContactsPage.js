@@ -15,16 +15,23 @@ export const ContactsPage = (props) => {
   const [email, setEmail] = useState('');
   const [duplicate, setDuplicate] = useState(false);
 
-  useEffect(
-    ()=> {
+  useEffect(() => {
+    const nameIsDuplicate = () => {
+      const found = contacts.find((contact) => contact.name === name);
+      if (found !== undefined) {
+        return true;
+      }
+      return false;
+    };
 
-      if(contacts.length > 0 && contacts[0].name===name){
-        alert('duplicate contact!');
-        setDuplicate(true);
+    if (nameIsDuplicate()) {
+      setDuplicate(true);
+    } else {
+      setDuplicate(false);
     }
-}
-  );
+  }, [name, contacts, duplicate]);
 
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     /*
