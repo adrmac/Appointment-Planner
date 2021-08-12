@@ -14,3 +14,5 @@ The goal of building this app is to work with:
 ## Launch
 The project is deployed via Netlify at https://goofy-curie-b09bb4.netlify.app/contacts
 
+## Sources
+The project was built following a tutorial in the Codecademy Front-End Engineer Career Path.
