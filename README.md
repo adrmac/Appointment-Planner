@@ -12,5 +12,5 @@ The goal of building this app is to work with:
 * React Router 5.2.0
 
 ## Launch
-The project is deployed via Netlify at 
+The project is deployed via Netlify at https://goofy-curie-b09bb4.netlify.app/contacts
 
